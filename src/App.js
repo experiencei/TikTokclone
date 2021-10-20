@@ -1,8 +1,8 @@
-import React from "react"
+import React , {useEffect} from "react"
 import './App.css';
 import Video from "./components/video/Video";
 import VideoSidebar from "./components/videosidebar/VideoSidebar";
-
+import { db } from "./components/firebase/firebase";
 function App() {
   return (
     <div className="app">
