@@ -1,6 +1,6 @@
 import React from 'react'
 import "./VideoFooter.css";
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import {MusicNote} from '@mui/icons-material';
 import Ticker from "react-ticker";
 
 function VideoFooter({ channel, description, song }) {
