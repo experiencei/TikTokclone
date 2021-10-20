@@ -3,7 +3,7 @@ import VideoFooter from '../videofooter/VideoFooter';
 import "./Video.css";
 
 
-function Video() {
+function  Video({ url, channel, description, song, likes, messages, shares }) {
 const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
    
