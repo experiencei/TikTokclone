@@ -1,5 +1,6 @@
 .video{
-    border: 1px solid black;
+    border: 5px solid white;
+    background-color:white;
     scroll-snap-align: start;
     position: relative;
     width: 100%;
