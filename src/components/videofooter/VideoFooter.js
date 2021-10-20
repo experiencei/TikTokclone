@@ -1,21 +1,16 @@
 import React from 'react'
 import "./VideoFooter.css";
 import MusicNoteIcon from "@material-ui/icons/MusicNote";
-
-
 import Ticker from "react-ticker";
 
 function VideoFooter({ channel, description, song }) {
     return (
       <div className="videoFooter">
-        <MusicNoteIcon
-        className="videoFooter__text">
+        <div className="videoFooter__text">
           <h3>@{channel}</h3>
           <p>{description}</p>
           <div className="videoFooter__ticker">
-            <div
-
-            className="videoFooter__icon" />
+            <MusicNoteIcon className="videoFooter__icon" />
             <Ticker mode="smooth">
               {({ index }) => (
                 <>
@@ -24,7 +19,7 @@ function VideoFooter({ channel, description, song }) {
               )}
             </Ticker>
           </div>
-        </MusicNoteIcon>
+        </div>
         <img
           className="videoFooter__record"
           src="https://static.thenounproject.com/png/934821-200.png"
@@ -33,6 +28,5 @@ function VideoFooter({ channel, description, song }) {
       </div>
     );
   }
-
-
-export default VideoFooter
+  
+  export default VideoFooter;
