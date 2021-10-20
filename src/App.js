@@ -13,7 +13,6 @@ function App() {
         <Video/>
         <Video/>
         <Video/>
-        <VideoSidebar/>
       </div>
     </div>
   );
