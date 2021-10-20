@@ -1,10 +1,10 @@
 import React, {useRef , useState} from 'react'
+import VideoFooter from '../videofooter/VideoFooter';
 import "./Video.css";
 
 
 function Video() {
-    const [playing, setPlaying] = useState(false);
-    const videoRef = useRef(null);
+const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
    
   const onVideoPress = () => {
@@ -24,8 +24,9 @@ function Video() {
             loop
             ref={videoRef}
             className="video__player"  src="">
-
+           
             </video>
+            <VideoFooter/>
         </div>
     )
 }
