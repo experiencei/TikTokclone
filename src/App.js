@@ -1,6 +1,7 @@
 import React from "react"
 import './App.css';
 import Video from "./components/video/Video";
+import VideoSidebar from "./components/videosidebar/VideoSidebar";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Video/>
         <Video/>
         <Video/>
+        <VideoSidebar/>
       </div>
     </div>
   );
