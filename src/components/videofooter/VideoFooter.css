@@ -5,6 +5,14 @@
     margin-left: 40px;
     display: flex;
   }
+
+  .videoFooter__text {
+    flex: 1;
+  }
+  
+  .videoFooter__text > p {
+    padding-bottom: 20px;
+  }
   .videoFooter__record {
     animation: spinTheRecord infinite 5s linear;
     height: 50px;
@@ -12,6 +20,10 @@
     position: absolute;
     bottom: 0;
     right: 20px;
+  }
+
+  .videoFooter__text {
+    flex: 1;
   }
 
   @keyframes spinTheRecord {
