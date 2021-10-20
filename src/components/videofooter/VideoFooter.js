@@ -1,14 +1,14 @@
 import React from 'react'
 import "./VideoFooter.css";
-// import FavoriteIcon from "@material-ui/icons/Favorite";
-//  import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import MusicNoteIcon from "@material-ui/icons/MusicNote";
+
 
 import Ticker from "react-ticker";
 
 function VideoFooter({ channel, description, song }) {
     return (
       <div className="videoFooter">
-        <div
+        <MusicNoteIcon
         className="videoFooter__text">
           <h3>@{channel}</h3>
           <p>{description}</p>
@@ -24,7 +24,7 @@ function VideoFooter({ channel, description, song }) {
               )}
             </Ticker>
           </div>
-        </div>
+        </MusicNoteIcon>
         <img
           className="videoFooter__record"
           src="https://static.thenounproject.com/png/934821-200.png"
